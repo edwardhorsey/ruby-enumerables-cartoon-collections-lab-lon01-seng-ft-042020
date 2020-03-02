@@ -25,17 +25,15 @@ return false
 end
 
 def find_the_cheese(list) # code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  
-  index = 0
-  while index<list.length do
+# the array below is here to help
+cheese_types = ["cheddar", "gouda", "camembert"]    
+index = 0
+while index<cheese_types.count do
     if list.include?(cheese_types[index])
-    return cheese_types[index]
+        return cheese_types[index]
     end
-  index+1
-  end
+    index += 1
+end
 nil
 end
-
 
